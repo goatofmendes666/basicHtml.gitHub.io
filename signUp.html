@@ -1,0 +1,109 @@
+
+<html>
+<head>
+
+	<title>Travelocity</title>
+	
+	<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+	<div class="page">
+		<div id= "navBar" class="navBar" > 
+			<div id= "header">
+			<ul>
+				<li><a class="headerLogo" href="index.html">Travelocity</a></li>
+				<li style="margin-left:5%"><a href="index.html">Home</a></li>
+				<li><a href="places.html">Attractions</a></li>
+				<li><a href="aboutUs.html">About US</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li style="margin-left: 22%"><input type="text" name="username" style="border-radius: 5%;" placeholder="Username/email"></li>
+				<li><input type="password" name="password" style="border-radius: 5%;" placeholder="Password"></li>
+				<li><input type="button" name="Sign In" value="Sign In"  style="border-radius: 10%;align-self: right" ></li>
+			</ul>
+			<ul style="margin-left: 76%">
+				<li>Doesn't have account<a href="signUp.html">Sign Up here </a></li>
+			</ul>
+			</div>
+		</div>
+
+
+		<div id="main">
+			<div>
+			  <img src="pan.jpg" style="height:100px;width:100%">
+			  <p class="tHeading" style="margin-top: -70px;color: white;">Sign Up Here</p>
+			</div>
+			<div id="signForm" style="margin-top: 5%;margin-bottom: 5%"> 
+				<form type="submit" action="index.html" onsubmit="submitForm()" >
+					<table border='0' width='480px' cellpadding='8' cellspacing='0' align='center'>
+						</tr>
+						    <td align='center'>Email:</td>
+						    <td><input type='email'maxlength="20" id='email' required></td>
+						</tr>
+						<tr>
+							<td align="center">Password:</td>
+							<td><input type="password" required id="password"></td>
+						</tr>
+						<tr>
+						    <td align='center'>Full Name:</td>
+						    <td><input type='text' id="name" maxlength="20" name='name'required></td>
+						</tr>
+						<tr>
+							<td align='center'>Sex:</td>
+							<td><input type="radio" name="sex" value="male" size="10"required>Male
+								<input type="radio" name="sex" value="Female" size="10"required>Female
+							</td>
+						</tr>
+						<tr>
+						    <td align='center'>Date Of Birth:</td>
+						    <td><input type='text' maxlength="10"  id='dob'required></td>
+						</tr>
+						<tr>
+						    <td align='center'>Address:</td>
+						    <td><input type='text'maxlength="20" id='address'required></td>
+						</tr>
+						<tr>
+						    <td align='center'>Phone:</td>
+						    <td><input type='text' maxlength="10" id='phone'required></td>
+						<tr >
+						    <td colspan="2" align='center'><input type='submit' name='register' value="Register" style="background-color: #302939;color: white;height: 30px;width: 90px;"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		
+		<footer id="footer" class="footer">
+			<div class="container4">
+				<div >
+					<div class="block4">
+						<h4>Travelocity</h4>
+						<p>Travel Website with diffrent attraction places in Toronto.</p>
+					</div>
+					<div class="block4">
+						<h4>Quick Links</h4>
+						<p>
+							</p><ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="places.html">Attractions</a></li>
+								<li><a href="aboutUs.html">About US</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						<p></p>
+					</div>
+					<div class="block4">
+						<h4>Contact Information</h4>
+						<ul >
+							<li>265 York Blvd, <br> Bramptonpur</li>
+							<li><a href="tel://6478317765">+ 6478317765</a></li>
+							<li><a href="mailto:info@yoursite.com">somename@somename.com</a></li>
+							<li><a href="index.html">somename.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="signUp.js"></script>
+</html>

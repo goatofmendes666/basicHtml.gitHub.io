@@ -1,0 +1,87 @@
+<html>
+<head>
+
+	<title>Travelocity</title>
+	
+	<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+	<div class="page">
+		<div id= "navBar" class="navBar" > 
+			<div id= "header">
+			<ul>
+				<li><a class="headerLogo" href="index.html">Travelocity</a></li>
+				<li style="margin-left:5%"><a href="index.html">Home</a></li>
+				<li><a onclick="attractions()">Attractions</a></li>
+				<li><a href="aboutUs.html">About US</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li style="margin-left: 22%"><input type="text" id="username" style="border-radius: 5%;" placeholder="Username/email"></li>
+				<li><input type="password" id="password" style="border-radius: 5%;" placeholder="Password"></li>
+				<li id="liuname" style="display: none;margin-left: 84%;margin-top: -2%;font-weight: bold;">Logged in as <label id="uname"></label> </li>
+				<li><input type="button" id="signIn" name="Sign In" value="Sign In" onclick="signIn()" style="border-radius: 10%;align-self: right" ></li>
+			</ul>
+			<ul style="margin-left: 76%">
+				<li id="lisignup">Doesn't have account<a href="signUp.html" style="padding: 5px 12px">Sign Up here </a></li>
+				<li id="lisignout" style="display: none;margin-left: 51%;font-weight: bold; margin-top: -20%;">
+				<input type="button" id="signOut" name="Sign Out" value="Sign Out" onclick="signOut()" style="border-radius: 10%;align-self: right" >
+				</li>
+			</ul>
+			</div>
+		</div>
+
+		<div id="main">
+			<div>
+			  <img src="pan.jpg" style="height:100px;width:100%">
+			  <p class="tHeading" style="margin-top: -70px;color: white;">About Us</p>
+			</div>
+
+			<div style="padding: 4%">
+				Adventure has defined (and redefined) small group travel for over 10 years. 
+				Travelling with us is the very best way to get up close and person with your planet in a way you’d 
+				never manage on your own and when you travel with us you support the local communities and help make 
+				the world a little bit better for everyone. Welcome to a world of good. Company has quickly earned the
+				reputation for everyone. The performance standard for customer satisfaction by providing innovation travel
+				web services for today’s expanding e-commerce market place. We become partners taking your business to the 
+				next level with the power pf professionally-designed browser-based web interfaces. 
+				With over 10 years of experience in media design and marketing, our staff is proud to have been a part of the
+				many successes associated with our talent.</p> <br>
+				<h2>	<b>OUR SERVICES</b></h2>
+		        We help brands engage with their consumers, start conversations, and boost conversions.We become partners taking your business to the next level with the power pf professionally-designed browser-based web interfaces.
+		   </div>
+		</div>
+
+		<footer id="footer" class="footer">
+			<div class="container4">
+				<div >
+					<div class="block4">
+						<h4>TraveloCity</h4>
+						<p>Travel Website with diffrent attraction places in Toronto.</p>
+					</div>
+					<div class="block4">
+						<h4>Quick Links</h4>
+						<p>
+							</p><ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="places.html">Attractions</a></li>
+								<li><a href="aboutUs.html">About US</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						<p></p>
+					</div>
+					<div class="block4">
+						<h4>Contact Information</h4>
+						<ul >
+							<li>265 York Blvd, <br> Bramptonpur</li>
+							<li><a href="tel://6478317765">+ 6478317765</a></li>
+							<li><a href="mailto:info@yoursite.com">somename@somename.com</a></li>
+							<li><a href="index.html">somename.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>

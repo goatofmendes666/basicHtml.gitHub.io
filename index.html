@@ -1,0 +1,210 @@
+
+<html>
+<head>
+
+	<title>Travelocity</title>
+	
+	<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+	<div class="page">
+		<div id= "navBar" class="navBar" > 
+			<div id= "header">
+			<ul>
+				<li><a class="headerLogo" href="index.html">Travelocity</a></li>
+				<li style="margin-left:5%"><a href="index.html">Home</a></li>
+				<li><a onclick="attractions()">Attractions</a></li>
+				<li><a href="aboutUs.html">About US</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li style="margin-left: 22%"><input type="text" id="username" style="border-radius: 5%;" placeholder="Username/email"></li>
+				<li><input type="password" id="password" style="border-radius: 5%;" placeholder="Password"></li>
+				<li id="liuname" style="display: none;margin-left: 84%;margin-top: -2%;font-weight: bold;">Logged in as <label id="uname"></label> </li>
+				<li><input type="button" id="signIn" name="Sign In" value="Sign In" onclick="signIn()" style="border-radius: 10%;align-self: right" ></li>
+			</ul>
+			<ul style="margin-left: 76%">
+				<li id="lisignup">Doesn't have account<a href="signUp.html" style="padding: 5px 12px">Sign Up here </a></li>
+				<li id="lisignout" style="display: none;margin-left: 51%;font-weight: bold; margin-top: -20%;">
+				<input type="button" id="signOut" name="Sign Out" value="Sign Out" onclick="signOut()" style="border-radius: 10%;align-self: right" >
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div id="imageCarousel">
+				<!-- <video width="2000px" height="1200px" autoplay loop>
+				  <source src="http://www.torontocityguide.com/wp-content/uploads/2018/05/City-Walking.mp4?_=1" type="video/mp4">
+				  <source src="movie.ogg" type="video/ogg">
+				  Your browser does not support the video tag.
+				</video>
+				 -->
+			<div class="slideshow-container">
+				<div class="mySlides fade" >
+				  <img src="1.jpg" style="height:500px;width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="2.jpg" style="height:500px;width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="3.jpg" style="height:500px;width:100%">
+				</div>
+			</div>
+		</div>
+
+		<div id="locations">
+			<div class="tHeading">
+				<p>Tourist Attractions</p>
+			</div>
+			<div class="container4">
+				<div class="row4">
+					<div class="block4  text-center ">
+						<div class="services">
+							<img src="1.jpg" class="tImages" >
+							<h3>Toronto Downtown</h3>
+							<p>Separated they live in Bookmarksgrove right at the coast of 
+the Semantics, a large language <a href="places.html">...more</a> 
+							</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="spa.jpg" class="tImages" >
+							<h3>Spa Suites</h3>
+							<p>Separated they live in Bookmarksgrove right at the coast of 
+the Semantics, a large language <a href="places.html">...more</a>
+							</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="taxi.jpg" class="tImages" >
+							<h3>Transfer Services</h3>
+							<p>Rideways is part of Booking Holdings Inc., the world’s leading provider of online travel & related services.
+Together with Booking.com,priceline.com.<a href="places.html">...more</a>
+						</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="Toula-Restaurant.jpg" class="tImages" >
+							<h3>Restaurant &amp; Bar</h3>
+							<p>In toronto restaurant are well maintained and the food their is not only delicious
+but the way of presentation is so tempting and services are very quick<a href="places.html">...more</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			<div class="row4">
+					<div class="block4  text-center ">
+						<div class="services">
+							<img src="albion falls.jpg" class="tImages" >
+							<h3>Waterfall</h3>
+							<p>Albion Falls is a 19 m classical/cascade waterfall flowing down the Niagara Escarpment
+in Red Hill Valley, in Hamilton, Ontario, Canada.<a href="places.html">...more</a>
+						</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="toronto-island.jpg" class="tImages" >
+							<h3>Island</h3>
+							<p>The Toronto Island seen from the CN TOWER.The Islands separates Toronto's Inner Harbour 
+from the rest of LAKE ONTARIO.<a href="places.htmlplaces.html">...more</a>
+							</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="7.jpg" class="tImages" >
+							<h3>Aquarium</h3>
+							<p>Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. 
+The aquarium is one of three aquariums owned and operated by Ripley Entertainment.It is located in downtown Toronto.<a href="places.html">...more</a>
+							</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="wonderland.jpg" class="tImages" >
+							<h3>Wonderland Canada</h3>
+							<p>Canada's Wonderland is a 330-acre theme park located in Vaughan, Ontario, 
+a suburb approximately 40 kilometres north of Downtown Toronto..<a href="">...more</a>
+							</p>
+						</div>
+					</div>
+				</div>
+ 				<div class="row4" style="margin-left: -7%">
+					<div class="block4  text-center " style="margin-left: 3%">
+						<div class="services">
+						<img src="park.jpg" class="tImages" >
+							<h3>High Park</h3>
+							<p> High Park is a municipal park in Toronto, Ontario, Canada. It spans 161 hectares (400 acres), 
+and is a mixed recreational and natural park, <a href="places.html">...more</a>
+							</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="beach.jpg" class="tImages" >
+							<h3>Beaches</h3>
+							<p>The Beaches is a neighbourhood in Toronto, Ontario, Canada.It is so named because of 
+its four beaches situated on Lake Ontario.<a href="places.html">...more</a>				
+						</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="downtown.jpg" class="tImages" >
+							<h3>Nathan Phillips Square</h3>
+							<p>Nathan Phillips Square is an urban plaza in Toronto, Ontario, Canada. 
+It forms the forecourt to Toronto City Hall, or New City Hall,<a href="">...more</a>
+							</p>
+						</div>
+					</div>
+					<div class="block4 text-center">
+						<div class="services">
+							<img src="bluffs.jpg" class="tImages" >
+							<h3>Scarborough Bluffs</h3>
+							<p>The Scarborough Bluffs, also known as The Bluffs, is an escarpment in the 
+Scarborough district of Toronto, Ontario, Canada....<a href="places.html">...more</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer" class="footer">
+			<div class="container4">
+				<div >
+					<div class="block4">
+						<h4>Travelocity</h4>
+						<p>Travel Website with diffrent attraction places in Toronto.</p>
+					</div>
+					<div class="block4">
+						<h4>Quick Links</h4>
+						<p>
+							</p><ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="places.html">Attractions</a></li>
+								<li><a href="aboutUs.html">About US</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						<p></p>
+					</div>
+					<div class="block4">
+						<h4>Contact Information</h4>
+						<ul >
+							<li>265 York Blvd, <br> Bramptonpur</li>
+							<li><a href="tel://6478317765">+ 1800-123-213</a></li>
+							<li><a href="mailto:info@yoursite.com">travelocity@toronto.com</a></li>
+							<li><a href="index.html">travelocity.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>

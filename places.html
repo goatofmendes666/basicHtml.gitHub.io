@@ -1,0 +1,751 @@
+<html>
+<head>
+
+	<title>Travelocity</title>
+	
+	<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+	<div class="page">
+		<div id= "navBar" class="navBar" > 
+			<div id= "header">
+			<ul>
+				<li><a class="headerLogo" href="index.html">Travelocity</a></li>
+				<li style="margin-left:5%"><a href="index.html">Home</a></li>
+				<li><a onclick="attractions()">Attractions</a></li>
+				<li><a href="aboutUs.html">About US</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li style="margin-left: 22%"><input type="text" id="username" style="border-radius: 5%;" placeholder="Username/email"></li>
+				<li><input type="password" id="password" style="border-radius: 5%;" placeholder="Password"></li>
+				<li id="liuname" style="display: none;margin-left: 84%;margin-top: -2%;font-weight: bold;">Logged in as <label id="uname"></label> </li>
+				<li><input type="button" id="signIn" name="Sign In" value="Sign In" onclick="signIn()" style="border-radius: 10%;align-self: right" ></li>
+			</ul>
+			<ul style="margin-left: 76%">
+				<li id="lisignup">Doesn't have account<a href="signUp.html" style="padding: 5px 12px">Sign Up here </a></li>
+				<li id="lisignout" style="display: none;margin-left: 51%;font-weight: bold; margin-top: -20%;">
+				<input type="button" id="signOut" name="Sign Out" value="Sign Out" onclick="signOut()" style="border-radius: 10%;align-self: right" >
+				</li>
+			</ul>
+			</div>
+		</div>
+
+		<div id = 'main'>
+			<div>
+			  <img src="pan.jpg" style="height:100px;width:100%">
+			  <p class="tHeading" style="margin-top: -70px;color: white;">Different Attraction Places</p>
+			</div>
+			<div id = "sections" >
+				<div id = "leftSection" style="margin-top: 8%; width:20%;left:0px;float: left">
+					<ul>
+						<li>
+							<h2>Toronto Downtown</h2>
+							<p class= "lsHeadingDesc">it is approximately 14 square kilometers in<a onclick="downtown()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Spa Suites</h2>
+							<p class= "lsHeadingDesc">There are monthly special  offers <a onclick="spa()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Transfer Service</h2>
+							<p class= "lsHeadingDesc">In toronto there are various services provided to the customers..<a onclick="transfer()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Restaurant &amp; Bar</h2>
+							<p class= "lsHeadingDesc">The Restaurant & Bar Design Awards, is <a onclick="restaurant()">...more.</a></p>
+						</li>
+						<li>
+							<h2>WaterFall</h2>
+							<p class= "lsHeadingDesc">With cascade falls the<a onclick="waterfall()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Island</h2>
+							<p class= "lsHeadingDesc">It is the beautiful island <a onclick="island()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Aquarium</h2>
+							<p class= "lsHeadingDesc">where differnt types of sea-animals can be viewed.<a onclick="aquarium()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Wonderland Canada</h2>
+							<p class= "lsHeadingDesc">Amusement park for all age of people<a onclick="wonderland()">...more.</a></p>
+						</li>
+						<li>
+							<h2>High Park</h2>
+							<p class= "lsHeadingDesc">High Park is located to the west of Downtown Toronto<a onclick="highParks()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Beaches</h2>
+							<p class= "lsHeadingDesc">It offers escape from city life<a onclick="beaches()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Nathan Phillips Square</h2>
+							<p class= "lsHeadingDesc">It is a vibrant, active space in the heart of the City<a onclick="square()">...more.</a></p>
+						</li>
+						<li>
+							<h2>Scarborough Bluffs</h2>
+							<p class= "lsHeadingDesc">More fondly referred to citywide as the Bluff<a onclick="scarborough()">...more.</a></p>
+						</li>
+					</ul>
+				</div>
+				<div id="rightSection" style="width:75%;right:0px;float:left;padding-top:3%;padding-left:2%;padding-right:2%;">
+					<div id="downtown">
+						<h1 align="center">Toronto Downtown</h1>
+						<div>
+							<p style="text-align: left"> Downtown Toronto is the city centre and main central business district of Toronto, Ontario, Canada. Located entirely within the district of Old Toronto, it is approximately 14 square kilometers in area, bounded by Bloor Street to the north, Lake Ontario to the south, the Don Valley to the east, and Bathurst Street to the west. It is also the governmental centre of the City of Toronto and the Province of Ontario.
+
+							The area is made up of the Canada’s largest concentration of skyscrapers and businesses that form Toronto's skyline. Downtown Toronto has the third most skyscrapers in North America exceeding 200 metres (656 ft) in height, behind New York City and Chicago.</p>
+							<b>Visit Site: </b><a href="https://en.wikipedia.org/wiki/Downtown_Toronto" target="_blank">Downtown Toronto</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369279.4041241579!2d-79.807610011696!3d43.689860175425686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb34d27310bd%3A0xba15d20622070393!2sDowntown%2C+Toronto%2C+ON!5e0!3m2!1sen!2sca!4v1532886382642" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="downtown1.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentName"></label></h4>
+							                    <p><label id="commentText"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="comment" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postComment()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="spa">
+						<h1 align="center">Spa Suites</h1>
+						<div>
+							<p style="text-align: left"> Overlooking the Toronto skyline from the hotel’s fifth floor, Spa My Blend by Clarins offers a luxury experience available in only two places in the world: here and Paris, home to the spa’s original location. Lauded among the best hotel spas in the world, this light-filled oasis pairs
+								expert therapists with a menu of signature treatments.</p><br>
+							<b>Visit Site: </b><a href="http://grandhoteltoronto.com/" target="_blank">Downtown Toronto</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49089694.47134014!2d-123.90876908376018!3d41.32632565553746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca5f93509a161d5%3A0x25aa23e2637ca1e5!2sBlair+House+Heritage+Inn+(B%26B)!5e0!3m2!1sen!2sin!4v1532886192375" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="spa suites.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2Spa" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNameSpa"></label></h4>
+							                    <p><label id="commentTextSpa"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentSpa" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentSpa()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div id="transfer">
+						<h1 align="center">Transfer Service</h1>
+						<div>
+							<p style="text-align: left"> We want you to enjoy what really matters and give you a stress-free travel experience wherever you are in the world, whether by taxi,train or bus..</p>
+							<b>Visit Site: </b><a href="https://www.uber.com/en-CA/ride/" target="_blank">Downtown Toronto</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56821853.80003078!2d-124.78659995403284!3d29.628946246885842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e81c7c932357b%3A0x66597f3d84b3313c!2sCanada+Transfers!5e0!3m2!1sen!2sin!4v1532886266923" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="torontoservice.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 14%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							        </ul>
+							        <hr>
+							        <ul id="list2transfer" style="visibility: hidden;" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNametransfer"></label></h4>
+							                    <p><label id="commentTexttransfer"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commenttransfer" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommenttransfer()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="bar">
+						<h1 align="center">Restaurant &amp; Bar</h1>
+						<div>
+							<p style="text-align: left"> Located in downtown Toronto, Azure Restaurant & Bar showcases the city's diverse culinary scene. Executive Sous Chef Grace Di Fede takes you 
+							
+							on a food journey cultivated around contemporary Canadian cuisine with Italian and French influences. Floor-to-ceiling windows meet a gorgeous glass canopy, letting diners look out onto 
+							
+							the vibrant cityscape. Start the day with a delicious buffet breakfast, meet for a casual business lunch, and make it a night with dinner and drinks. Enjoy the ambiance of outdoor dining 
+							
+							all year long and take your taste buds off the beaten path..</p>
+							<b>Visit Site: </b><a href="https://realsports.ca/BarAndGrill/toronto/" target="_blank">Downtown Toronto</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1733855190446!2d-79.38750688517058!3d43.64456086100841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d3f8b3a2b1%3A0x9b9d44f2c16ddcae!2sAzure+Restaurant+%26+Bar!5e0!3m2!1sen!2sca!4v1532893897346" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="bar.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2rest" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNamerest"></label></h4>
+							                    <p><label id="commentTextrest"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentrest" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentrest()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div id="waterfall">
+						<h1 align="center">WaterFall</h1>
+						<div>
+							<p style="text-align: left">Niagara Falls, Ontario, is a Canadian city at the famous waterfalls of the same name, linked with the U.S. by the Rainbow Bridge. Its site on the Niagara River's western shore overlooks the Horseshoe Falls, the cascades' most expansive section. Elevators take visitors to a lower, wetter vantage point behind the falls. A cliffside park features a promenade alongside 520-ft.-high Skylon Tower with an observation deck.</p>
+							<b>Visit Site: </b><a href="https://www.niagarafallstourism.com/" target="_blank">Downtown Toronto</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48126010.484297805!2d-130.03947407671765!3d42.58971088149917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34307412d7ae9%3A0x29be1d1e689ce35b!2sNiagara+Falls!5e0!3m2!1sen!2sin!4v1532886366021" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="niagarafalls.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2waterfall" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNamewaterfall"></label></h4>
+							                    <p><label id="commentTextwaterfall"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentwaterfall" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentwaterfall()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div id="island">
+						<h1 align="center">Toronto Island</h1>
+						<div>
+							<p style="text-align: left">Toronto Island are a chain of small islands in Lake Ontario, south of mainland Toronto, Ontario, Canada. Comprising the only group of islands in the western part of Lake Ontario, the Toronto Islands are located just offshore from the city centre, and provide shelter for Toronto Harbour. The islands are home to parkland, the Billy Bishop Toronto City Airport, several yacht clubs, Centreville Amusement Park, and Hanlan's Beach. The island community is considered to be the largest urban car-free community in North America, although some service vehicles are permitted.</p>
+							<b>Visit Site: </b><a href="http://www.torontoisland.com/" target="_blank">Toronto Island</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48126010.484297805!2d-130.03947407671765!3d42.58971088149917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34307412d7ae9%3A0x29be1d1e689ce35b!2sNiagara+Falls!5e0!3m2!1sen!2sin!4v1532886366021" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="islands.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2island" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNameisland"></label></h4>
+							                    <p><label id="commentTextisland"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentisland" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentisland()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div id="aquarium">
+						<h1 align="center">Ripley's Aquarium of Canada</h1>
+						<div>
+							<p style="text-align: left">Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment. It is located in downtown Toronto, just southeast of the CN Tower. The aquarium has 5.7 million litres (1.5 million gallons) of marine and freshwater habitats from across the world. The exhibits hold more than 20,000 exotic sea and freshwater specimens from more than 450 species.</p>
+							<b>Visit Site: </b><a href="https://www.ripleyaquariums.com/" target="	_blank">Ripley's Aquarium of Canada</a>
+
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11549.108371301481!2d-79.385971!3d43.642403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8daf1a19298c213d!2sRipley&#39;s+Aquarium+of+Canada!5e0!3m2!1sen!2sca!4v1532952331136" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="ripleys-aquarium-toronto.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2aquarium" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNameaquarium"></label></h4>
+							                    <p><label id="commentTextaquarium"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentaquarium" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentaquarium()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div id="wonderland">
+						<h1 align="center">Canada's Wonderland</h1>
+						<div>
+							<p style="text-align: left">Canada's Wonderland is a 330-acre (130 ha) theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres (25 mi) north of Downtown Toronto. Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country's largest. The park, currently owned by Cedar Fair, has been the most visited seasonal amusement park in North America for several consecutive years.</p>
+							<b>Visit Site: </b><a href="https://www.canadaswonderland.com/" target="_blank">Canada's Wonderland</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11510.4720783791!2d-79.5394625!3d43.8430176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87a6830532b2fcfc!2sCanada&#39;s+Wonderland!5e0!3m2!1sen!2sca!4v1532952607357" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="canadawonderland.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 14%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							        </ul>
+							        <hr>
+							        <ul id="list2wonderland" style="visibility: hidden;" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNamewonderland"></label></h4>
+							                    <p><label id="commentTextwonderland"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentwonderland" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentwonderland()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div id="highParks">
+						<h1 align="center">High Park</h1>
+						<div>
+							<p style="text-align: left"> High Park is a municipal park in Toronto, Ontario, Canada. It spans 161 hectares (400 acres), and is a mixed recreational and natural park, with sporting facilities, cultural facilities, educational facilities, gardens, playgrounds and a zoo. One third of the park remains in a natural state, with a rare oak savannah ecology. High Park was opened to the public in 1876 and is based on a bequest of land from John George Howard to the City of Toronto.</p>
+							<b>Visit Site: </b><a href="http://www.highparktoronto.com/" target="_blank">High ParkHigh Park</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11548.311537348694!2d-79.4636903!3d43.6465479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1bcc825a300ee67!2sHigh+Park!5e0!3m2!1sen!2sca!4v15329530430122" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="High-Park.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2high" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNamehigh"></label></h4>
+							                    <p><label id="commentTexthigh"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commenthigh" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommenthigh()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="beaches">
+						<h1 align="center">Beaches</h1>
+						<div>
+							<p style="text-align: left">There are different beavhes in toronto, one of the beautiful beach is Woodbine Beach which is the largest of the four beaches in the Beaches in Toronto, Ontario, Canada. Located along Lake Shore Boulevard at the foot of Woodbine Avenue, it is next to Ashbridge's Bay and Kew-Balmy Beach. Woodbine beach is the westernmost beach in the Beaches, and the series of beaches extend east until the RC Harris Water Treatment Plant.The beach runs parallel to the boardwalk and the Martin Goodman Trail</p>
+							<b>Visit Site: </b><a href="https://en.wikipedia.org/wiki/Woodbine_Beach" target="_blank">Beaches</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3471271668564!2d-79.31001268440627!3d43.66174995989557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cbf1b403037f%3A0x7e1c4a7ac9e90b29!2sWoodbine+Beach!5e0!3m2!1sen!2sca!4v1532953358636" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="beachestoronto.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2beaches" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNamebeaches"></label></h4>
+							                    <p><label id="commentTextbeaches"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentbeaches" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentbeaches()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div id="square">
+						<h1 align="center">Nathan Phillips Square</h1>
+						<div>
+							<p style="text-align: left">Nathan Phillips Square is an urban plaza in Toronto, Ontario, Canada. It forms the forecourt to Toronto City Hall, or New City Hall, at the intersection of Queen Street West and Bay Street, and is named for Nathan Phillips, mayor of Toronto from 1955 to 1962.The square was designed by the City Hall's architect Viljo Revell and landscape architect Richard Strong.It opened in 1965.</p>
+							<b>Visit Site: </b><a href="https://en.wikipedia.org/wiki/Nathan_Phillips_Square" target="_blank">Nathan Phillips Square</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.20864668037!2d-79.3836412!3d43.6522843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd78ef1b308ab9d4!2sNathan+Phillips+Square!5e0!3m2!1sen!2sca!4v1532953581651" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="nst.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2square" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNamesquare"></label></h4>
+							                    <p><label id="commentTextsquare"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentsquare" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentsquare()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div id="scarborough">
+						<h1 align="center">Scarborough Bluffs</h1>
+						<div>
+							<p style="text-align: left">The Scarborough Bluffs, also known as The Bluffs, is an escarpment in the Scarborough district of Toronto, Ontario, Canada. There are nine parks along the bluffs, with Bluffers Park being the only one with a beach. Forming much of the eastern portion of Toronto's waterfront, the Scarborough Bluffs stands above the shoreline of Lake Ontario. At its highest point, the escarpment rises 90 metres (300 ft) above the coastline and spans a length of 15 kilometres (9.3 mi)./p>
+							<b>Visit Site: </b><a href="https://en.wikipedia.org/wiki/Scarborough_Bluffs" target="_blank">Scarborough Bluffs</a>
+						</div>
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.2219736143197!2d-79.23386093450053!3d43.70593587911945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cfa5d7288f2b%3A0x17e07f069b974d67!2sScarborough+Bluffs+Park%2C+Scarborough%2C+ON+M1M+3W3!5e0!3m2!1sen!2sca!4v1532953755228" width="600" height="300" style="width: 45%;float: left" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<img src="scbluffs.jpg" style="padding-left:5%;width: 45%;float: left;height: 300px">
+						</div>
+						<div id="respond" style="padding-top:30%;margin-bottom: 3%">
+							<div class="detailBox">
+							    <div class="titleBox">
+							      <label>Comment Box</label>
+							    </div>
+							    <div class="actionBox">
+							        <ul class="commentList" style="height: 50%;overflow-y: hidden;">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4>Sandeep Sodhi</h4>
+							                    <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							                </div>
+							            </li>
+							            <hr>
+							        </ul>
+							        <ul id="list2scarbrough" style="visibility: hidden;margin-top:-25%" class="commentList">
+							            <li>
+							                <div class="commenterImage">
+							                  <img src="ironMan.jpg" />
+							                </div>
+							                <div class="commentText">
+							            	<h4><label id="commentNamescarbrough"></label></h4>
+							                    <p><label id="commentTextscarbrough"></label></p>
+							                </div>
+							            </li>
+							        </ul>
+									<form  style="margin-top: -55%" id="commentform">
+									    <label for="comment" class="required">Your message</label>
+									    <textarea name="comment" id="commentscarbrough" rows="6" tabindex="4"  required="required"></textarea>
+									    <input name="submit" onclick="postCommentscarbrough()" type="button" value="Submit comment" />
+		    						</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer" class="footer">
+			<div class="container4">
+				<div >
+					<div class="block4">
+						<h4>TraveloCity</h4>
+						<p>Travel Website with diffrent attraction places in Toronto.</p>
+					</div>
+					<div class="block4">
+						<h4>Quick Links</h4>
+						<p>
+							</p><ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="places.html">Attractions</a></li>
+								<li><a href="aboutUs.html">About US</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						<p></p>
+					</div>
+					<div class="block4">
+						<h4>Contact Information</h4>
+						<ul >
+							<li>265 York Blvd, <br> Bramptonpur</li>
+							<li><a href="tel://6478317765">+ 6478317765</a></li>
+							<li><a href="mailto:info@yoursite.com">somename@somename.com</a></li>
+							<li><a href="index.html">somename.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
